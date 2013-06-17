@@ -1,0 +1,9 @@
+Mon, 17 Jun 2013 13:17:55 -0400
+doc/README_FOR_APP	Sun, 16 Jun 2013 10:46:04 -0400
+app/controllers/application_controller.rb	Mon, 17 Jun 2013 13:07:46 -0400
+app/controllers/sessions_controller.rb	Mon, 17 Jun 2013 13:07:22 -0400
+app/controllers/users_controller.rb	Mon, 17 Jun 2013 13:06:56 -0400
+app/helpers/application_helper.rb	Sun, 16 Jun 2013 10:46:04 -0400
+app/helpers/sessions_helper.rb	Mon, 17 Jun 2013 13:03:36 -0400
+app/helpers/users_helper.rb	Mon, 17 Jun 2013 13:03:05 -0400
+app/models/user.rb	Mon, 17 Jun 2013 13:06:57 -0400
