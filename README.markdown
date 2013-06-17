@@ -9,7 +9,7 @@ This is a sample app to test out these gems, with just a sign up page.
 
 #### Install and Start up
   *  install redis
-    * ```` brew install redis `````
+    * ```` brew install redis ````
   * clone/fork the repo
   * Bundle
     * ```` bundle install ````

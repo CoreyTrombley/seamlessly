@@ -1,31 +1,36 @@
-<h1>Sign Up</h1>
-
-<h2>Get started for only $<%= ab_test :sign_up %> a month!</h2>
-
-
-<%= form_for @user do |f| %>
-  <% if  @user.errors.any? %>
-    <div class="error_messages">
-      <h2>Form is invalid</h2>
-      <ul>
-        <%  @user.errors.full_messages.each do |message| %>
-          <li><%= message %></li>
+<div class="gray_box">
+  <div class="box">
+    <%= image_tag 't-shirt-and-jeans-girl.jpg', :class => "pull-left" %>
+    <div>
+      <h2>CREATE A T-SHIRT FROM YOUR FAVOURITE ONLINE CONTENT, SEAMLESSLY.</h2>
+      <h4>Comming Soon. Sign up now to get early access!</h4>
+      <%= form_for @user do |f| %>
+        <% if  @user.errors.any? %>
+          <div class="error_messages">
+            <h2>We ran into some errors</h2>
+            <ul>
+              <%  @user.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
         <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
+        <div class="field">
+          <%= f.label :email do %>
+            <%= f.text_field :email, :placeholder => "Email Address" %>
+          <% end %>
+        </div>
+      <!--   <div class="field">
+          <%= f.label :password %><br />
+          <%= f.password_field :password %>
+        </div>
+        <div class="field">
+          <%= f.label :password_confirmation %><br />
+          <%= f.password_field :password_confirmation %>
+        </div> -->
+        <div class="actions"><%= f.submit "Sign Up", :class => "button" %></div>
+      <% end %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation %>
-  </div>
-  <div class="actions"><%= f.submit "Sign Up" %></div>
-<% end %>
+</div>

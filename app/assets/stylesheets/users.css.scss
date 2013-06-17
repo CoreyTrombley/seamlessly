@@ -1,3 +1,42 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body {
+  background: url('Crying-meme.svg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  .gray_box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    .box {
+      position: relative;
+      background: white;
+      width: 70%;
+      height: 50%;
+      margin: 15% auto;
+      overflow: hidden;
+      img {
+        width: 30%
+      }
+      div {
+        // padding: 2%
+      }
+    }
+  }
+}
+.pull-left {
+  float: left;
+}
+.button {
+  background-color: red;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+}
