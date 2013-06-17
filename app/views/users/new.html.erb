@@ -1,5 +1,8 @@
 <h1>Sign Up</h1>
 
+<h2>Get started for only $<%= ab_test :sign_up %> a month!</h2>
+
+
 <%= form_for @user do |f| %>
   <% if  @user.errors.any? %>
     <div class="error_messages">

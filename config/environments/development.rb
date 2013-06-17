@@ -34,4 +34,6 @@ Seamlessly::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  Vanity.playground.collecting = true
 end
