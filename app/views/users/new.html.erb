@@ -1,8 +1,8 @@
 <div class="gray_box">
   <div class="box">
-    <%= image_tag 't-shirt-and-jeans-girl.jpg', :class => "pull-left" %>
+    <%= image_tag 'meme-shirt-girl.jpg', :class => "pull-left" %>
     <div>
-      <h2>CREATE A T-SHIRT FROM YOUR FAVOURITE ONLINE CONTENT, SEAMLESSLY.</h2>
+      <h2>CREATE A T-SHIRT FROM YOUR FAVORITE ONLINE CONTENT, SEAMLESSLY.</h2>
       <h4>Comming Soon. Sign up now to get early access!</h4>
       <%= form_for @user do |f| %>
         <% if  @user.errors.any? %>
@@ -18,7 +18,7 @@
 
         <div class="field">
           <%= f.label :email do %>
-            <%= f.text_field :email, :placeholder => "Email Address" %>
+            <%= f.text_field :email, :placeholder => "email address" %>
           <% end %>
         </div>
       <!--   <div class="field">
