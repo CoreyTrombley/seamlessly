@@ -1,11 +1,9 @@
 # Seamless.ly
 
-## A/B Testing with Vanity and Split
+## A/B Testing with Vanity
 
-This is a sample app to test out these gems, with just a sign up page.
+This is a sample app to test the vanity gem, with just a sign up page.
 
-
-### With Vanity
 
 #### Install and Start up
   *  install redis
