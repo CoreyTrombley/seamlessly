@@ -1,6 +1,19 @@
 <div class="gray_box">
+  <% if ab_test(:layout) == "second" %>
+    <div class="nav_bar">
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>Archive</li>
+          <li><strong>Create</strong></li>
+        </ul>
+      </nav>
+    </div>
+  <% end %>
   <div class="box">
-    <%= image_tag 'meme-shirt-girl.jpg', :class => "pull-left" %>
+    <% if ab_test(:layout) == "first" %>
+      <%= image_tag 'meme-shirt-girl.jpg', :class =>"pull-left" %>
+    <% end %>
     <div>
       <h2>CREATE A T-SHIRT FROM YOUR FAVORITE ONLINE CONTENT, SEAMLESSLY.</h2>
       <h4>Comming Soon. Sign up now to get early access!</h4>
